@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import filedialog
 from PIL import Image, ImageTk
 
-# this Initialize global variables
+
 video_capture = None
 #image = None
 
@@ -13,7 +13,7 @@ def detect_faces_image():
     global canvas
 
 
-    # Load the pre-trained face detection classifier
+    # This Load the pre-trained face detection classifier
     face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
     # Open a file dialog to select an image file
